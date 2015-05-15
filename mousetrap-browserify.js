@@ -67,8 +67,12 @@ var _SHIFT_MAP = {
  * @type {Object}
  */
 var _SPECIAL_ALIASES = {
-  'option': 'alt',    'command': 'meta',    'return': 'enter',    'escape': 'esc',    'plus': '+',    'mod': /Mac|iPod|iPhone|iPad/.test(navigator.platform) ? 'meta' : 'ctrl'
+  'option': 'alt',    'command': 'meta',    'return': 'enter',    'escape': 'esc',    'plus': '+'
 };
+
+if (process.browser) {
+  _SPECIAL_ALIASES.mod = /Mac|iPod|iPhone|iPad/.test(navigator.platform) ? 'meta' : 'ctrl'
+}
 
 /**
  * variable to store the flipped version of _MAP from above
