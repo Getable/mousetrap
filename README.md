@@ -2,6 +2,8 @@
 
 Mousetrap is a simple library for handling keyboard shortcuts in Javascript.
 
+**This is a fork that is explicitly designed to work with browserify. It allows mousetrap to be required in a node env and not cause mass chaos**
+
 It is licensed under the Apache 2.0 license.
 
 It is around **2kb** minified and gzipped and **4.5kb** minified, has no external dependencies, and has been tested in the following browsers:

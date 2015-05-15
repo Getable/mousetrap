@@ -1,8 +1,9 @@
 {
-  "name": "mousetrap",
+  "name": "@getable/mousetrap",
   "version": "1.5.2",
   "description": "Simple library for handling keyboard shortcuts",
-  "main": "mousetrap.js",
+  "main": "mousetrap-browserify.js",
+  "browser": "mousetrap-browserify.js",
   "directories": {
     "test": "tests"
   },
@@ -11,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ccampbell/mousetrap.git"
+    "url": "git://github.com/Getable/mousetrap.git"
   },
   "keywords": [
     "keyboard",
@@ -20,8 +21,6 @@
   ],
   "author": "Craig Campbell",
   "license": "Apache 2.0",
-  "gitHead": "c202a0bd4967d5a3064f9cb376db51dec9345336",
-  "readmeFilename": "README.md",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-complexity": "~0.1.2",
